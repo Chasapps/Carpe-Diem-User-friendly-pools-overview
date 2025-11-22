@@ -642,6 +642,34 @@ body.full-map #map{
   }
 }
 
+/* === SINGLE-CARD LAYOUT: NAME → BIG ARROWS → MAP ======================= */
+
+/* Pool name header inside the map card */
+.pool-header {
+  margin-bottom: 4px;
+}
+
+/* Center the up/down arrows and space them nicely */
+.controls.arrow-controls {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 8px 0 10px;
+}
+
+/* Make the arrows BIG */
+.arrow-pill {
+  font-size: 36px;
+  line-height: 1;
+  padding: 8px 24px;
+}
+
+/* #poolList now only holds one row, so let it size naturally */
+#poolList {
+  max-height: none;
+  overflow: visible;
+}
+
 /* =======================================================================
    OVERVIEW PAGE STYLES
    ======================================================================= */
