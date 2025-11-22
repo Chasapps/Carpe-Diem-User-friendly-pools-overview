@@ -763,3 +763,33 @@ body.full-map #map{
     height:calc(100vh - 200px);
   }
 }
+.map-layout{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.pool-header{
+  /* optional extra spacing for the name row */
+  margin-bottom:4px;
+}
+
+.controls.big-arrows{
+  display:flex;
+  justify-content:center;
+  gap:32px;
+  margin-bottom:4px;
+}
+
+.arrow-pill{
+  font-size:40px;      /* make arrows BIG */
+  padding:10px 22px;
+  border-radius:999px;
+}
+
+/* since poolList is now just one row, let it size naturally */
+#poolList{
+  max-height:none;
+  overflow:visible;
+}
+
