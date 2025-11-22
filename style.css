@@ -792,4 +792,21 @@ body.full-map #map{
   max-height:none;
   overflow:visible;
 }
+/* NAME → BIG ARROWS → MAP layout fix */
+
+.map-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Make sure the map actually has some height */
+#map,
+.pool-map {
+  width: 100%;
+  min-height: 320px;        /* you can change to 50vh or 400px if you like */
+  border-radius: 18px;      /* optional, to match cards */
+  overflow: hidden;
+}
+
 
