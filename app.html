@@ -39,29 +39,22 @@
   </header>
   <main>
     <section id="listView" class="view active">
-      <div class="controls">
-        <button id="btnUp" class="pill">▲</button>
-        <button id="btnDown" class="pill">▼</button>
-      </div>
+  <div class="map-wrap card map-layout">
+    <div id="poolList" class="pool-header"></div>
 
-      <!-- New large pool navigation bar -->
-      <div class="pool-nav card">
-        <button id="btnPrevPool" class="pool-nav-btn">◀ Previous</button>
-        <button id="btnNextPool" class="pool-nav-btn">Next ▶</button>
-      </div>
+    <div class="controls big-arrows">
+      <button id="btnUp" class="arrow-pill">▲</button>
+      <button id="btnDown" class="arrow-pill">▼</button>
+    </div>
 
-      <div class="content-split">
-        <div id="poolList" class="scroll-list card"></div>
+    <div id="map" class="pool-map"></div>
 
-        <div class="map-wrap card">
-          <div id="map" class="pool-map"></div>
-          <div class="map-actions">
-            <button id="openNativeMap" class="pill ghost small">🧭 Open in Maps</button>
-            <button id="mapToggle" class="map-toggle pill" aria-pressed="false">🗺️ Full Map</button>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="map-actions">
+      <!-- existing Open in Maps / Full Map buttons -->
+    </div>
+  </div>
+</section>
+
 
     <section id="passportView" class="view">
       <h2 class="subtitle">Summer Quest Stamps</h2>
